@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;
+}
+
 .overall-container {
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;

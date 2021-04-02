@@ -26,10 +26,14 @@
 			<div type="text" class="calculator-screen z-depth-1" readonly>0</div>
 		</div>
 		<div class="bottom-container">
-			<button type="button" class="operator-btn plus-sign btn btn-info" value="+">+</button>
-			<button type="button" class="operator-btn minus-sign btn btn-info" value="-">-</button>
-			<button type="button" class="operator-btn multi-sign btn btn-info" value="x">&times</button>
-			<button type="button" class="operator-btn division-sign btn btn-info" value="/">&divide</button>
+			<button type="button" class="operator-btn plus-sign btn btn-info" value="+"
+				onclick="getOperand('+');">+</button>
+			<button type="button" class="operator-btn minus-sign btn btn-info" value="-"
+				onclick="getOperand('-');">-</button>
+			<button type="button" class="operator-btn multi-sign btn btn-info" value="x"
+				onclick="getOperand('*');">&times</button>
+			<button type="button" class="operator-btn division-sign btn btn-info" value="/"
+				onclick="getOperand('&divide');">&divide</button>
 
 			<button type="button" class="btn-number btn btn-light number-7 " value="7"
 				onclick="getNumber(7);">7</button>
@@ -47,7 +51,7 @@
 			<button type="button" class="btn-number btn btn-light number-0" value="0" onclick="getNumber(0);">0</button>
 			<button type="button" class="decimal function btn btn-secondary dot" value=".">.</button>
 			<button type="button" class="btn btn-danger clear" value="all-clear">
-				<div>AC</div>
+				AC
 			</button>
 
 			<button type="button" class="equal-sign operator btn btn-default" value="=">=</button>
