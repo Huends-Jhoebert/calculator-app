@@ -1,5 +1,8 @@
 
 
+var numberContainer1 = '';
+var numberContainer2 = '';
+
 var operandAnswer = '';
 
 // get num
@@ -43,21 +46,9 @@ function clearAnswer() {
 // display operand
 function getOperand(operand) {
 
-
 	displayNum.textContent += operand;
 
-	if (operand == '+') {
-		operandAnswer = '+';
-	}
-	else if (operand == '-') {
-		operandAnswer = '-';
-	}
-	else if (operand == '*') {
-		operandAnswer = '*';
-	}
-	else if (operand == '÷') {
-		operandAnswer = '/';
-	}
+
 }
 
 
@@ -74,13 +65,22 @@ function displayAnswer() {
 
 	// convert asnwer to integer
 	var show = displayNum.textContent;
-	var number = parseInt(show);
-
+	var textToString = new String(show)
 	// console.log(number + 2);
 	// console.log(operandAnswer)
 
-	if (operandAnswer == '+') {
-		var testAns = number + 2;
-		displayNum.textContent = testAns;
-	}
+	displayNum.textContent = eval(textToString.toString());
+
+	// if (operandAnswer == '+') {
+	// 	displayNum.textContent = eval(textToString.toString());
+	// }
+	// else if (operandAnswer == '-') {
+	// 	displayNum.textContent = eval(textToString.toString());
+	// }
+	// else if (operandAnswer == '*') {
+	// 	displayNum.textContent = eval(textToString.toString());
+	// }
+	// else if (operandAnswer == '÷') {
+	// 	displayNum.textContent = eval(textToString.toString());
+	// }
 }
