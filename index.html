@@ -23,7 +23,7 @@
 
 	<div class="overall-container">
 		<div class="top-container">
-			<div type="text" class="calculator-screen z-depth-1" readonly>0</div>
+			<p class="calculator-screen z-depth-1" readonly id="answer" value=" ">0</p>
 		</div>
 		<div class="bottom-container">
 			<button type="button" class="operator-btn plus-sign btn btn-info" value="+"
@@ -33,7 +33,7 @@
 			<button type="button" class="operator-btn multi-sign btn btn-info" value="x"
 				onclick="getOperand('*');">&times</button>
 			<button type="button" class="operator-btn division-sign btn btn-info" value="/"
-				onclick="getOperand('&divide');">&divide</button>
+				onclick="getOperand('÷');">&divide</button>
 
 			<button type="button" class="btn-number btn btn-light number-7 " value="7"
 				onclick="getNumber(7);">7</button>
