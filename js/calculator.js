@@ -47,8 +47,6 @@ function clearAnswer() {
 function getOperand(operand) {
 
 	displayNum.textContent += operand;
-
-
 }
 
 
