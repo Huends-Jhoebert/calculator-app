@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.overall-container {
+	width: 50%;
+	max-width: 380px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 10px 10px -5px;
+}
+
+.overall-container input {
+	width: 100%;
+	background: black;
+	height: 80px;
+}
+
+.bottom-container {
+	padding: 0.8rem;
+	grid-gap: 0.5rem 3rem;
+	display: grid;
+	grid-template-columns: repeat(4, 40px);
+	grid-template-rows: repeat(5, 70px);
+	grid-template-areas: "plus minus multi divi" "number-7 number-8 number-9 equal-sign" "number-4 number-5 number-6 equal-sign" "number-1 number-2 number-3 equal-sign" "number-0 dot clear equal-sign";
+}
+
+/* grid-templates */
+
+.plus-sign {
+	grid-area: plus;
+}
+
+.minus-sign {
+	grid-area: minus;
+}
+
+.multi-sign {
+	grid-area: multi;
+}
+
+.division-sign {
+	grid-area: divi;
+}
+
+.number-7 {
+	grid-area: number-7;
+}
+
+.number-8 {
+	grid-area: number-8;
+}
+
+.number-9 {
+	grid-area: number-9;
+}
+
+.number-4 {
+	grid-area: number-4;
+}
+
+.number-5 {
+	grid-area: number-5;
+}
+
+.number-6 {
+	grid-area: number-6;
+}
+
+.number-1 {
+	grid-area: number-1;
+}
+
+.number-2 {
+	grid-area: number-2;
+}
+
+.number-3 {
+	grid-area: number-3;
+}
+
+.number-0 {
+	grid-area: number-0;
+}
+
+.dot {
+	grid-area: dot;
+}
+
+.clear {
+	grid-area: clear;
+}
+
+.equal-sign {
+	grid-area: equal-sign;
+}
+
+/* grid-templates */
+
+@media only screen and (max-width:600px) {
+	.overall-container {
+		width: 80%;
+	}
+}
