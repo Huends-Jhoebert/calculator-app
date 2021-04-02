@@ -5,7 +5,7 @@
 }
 
 .overall-container {
-	width: 50%;
+	width: 55%;
 	max-width: 380px;
 	position: absolute;
 	top: 50%;
@@ -21,11 +21,11 @@
 }
 
 .bottom-container {
-	padding: 0.8rem;
-	grid-gap: 0.5rem 3rem;
-	display: grid;
-	grid-template-columns: repeat(4, 40px);
-	grid-template-rows: repeat(5, 70px);
+	padding: 1rem;
+	grid-gap: 0.5rem 2.6rem;
+	display: inline-grid;
+	grid-template-columns: repeat(4, 45px);
+	grid-template-rows: repeat(5, 60px);
 	grid-template-areas: "plus minus multi divi" "number-7 number-8 number-9 equal-sign" "number-4 number-5 number-6 equal-sign" "number-1 number-2 number-3 equal-sign" "number-0 dot clear equal-sign";
 }
 
@@ -93,10 +93,19 @@
 
 .clear {
 	grid-area: clear;
+	padding: 0!important;
+	width: 70px;
+	height: 50px;
 }
 
 .equal-sign {
 	grid-area: equal-sign;
+}
+
+.operator-btn, .btn-number {
+	padding: 0!important;
+	width: 70px;
+	height: 50px;
 }
 
 /* grid-templates */
